@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="72">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Page name="ГруппаПоступлениеДС" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступление ДС</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПоступлениеДСРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="ПоступлениеДС" id="14">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПоступлениеДС</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПоступлениеДСКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="ПоступлениеДСКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ПоступлениеДСРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ПоступлениеДССтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>ПоступлениеДС</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоступлениеДССтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ПоступлениеДССтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПоступлениеДССостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>ПоступлениеДС</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоступлениеДССостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПоступлениеДССостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПоступлениеДСУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>ПоступлениеДС</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоступлениеДСУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ПоступлениеДСУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПоступлениеДСНомерСтроки" id="27">
+									<DataPath>Объект.ПоступлениеДС.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоступлениеДСНомерСтрокиКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ПоступлениеДСНомерСтрокиРасширеннаяПодсказка" id="29"/>
+								</LabelField>
+								<ColumnGroup name="ПоступлениеДСГруппа1" id="74">
+									<ExtendedTooltip name="ПоступлениеДСГруппа1РасширеннаяПодсказка" id="75"/>
+									<ChildItems>
+										<ColumnGroup name="ПоступлениеДСГруппа2" id="76">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПоступлениеДСГруппа2РасширеннаяПодсказка" id="77"/>
+											<ChildItems>
+												<InputField name="ПоступлениеДСКонтрагент" id="30">
+													<DataPath>Объект.ПоступлениеДС.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПоступлениеДСКонтрагентКонтекстноеМеню" id="31"/>
+													<ExtendedTooltip name="ПоступлениеДСКонтрагентРасширеннаяПодсказка" id="32"/>
+												</InputField>
+												<InputField name="ПоступлениеДСДоговор" id="33">
+													<DataPath>Объект.ПоступлениеДС.Договор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПоступлениеДСДоговорКонтекстноеМеню" id="34"/>
+													<ExtendedTooltip name="ПоступлениеДСДоговорРасширеннаяПодсказка" id="35"/>
+												</InputField>
+												<InputField name="ПоступлениеДССумма" id="36">
+													<DataPath>Объект.ПоступлениеДС.Сумма</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПоступлениеДССуммаКонтекстноеМеню" id="37"/>
+													<ExtendedTooltip name="ПоступлениеДССуммаРасширеннаяПодсказка" id="38"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ПоступлениеДСГруппа3" id="78">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПоступлениеДСГруппа3РасширеннаяПодсказка" id="79"/>
+											<ChildItems>
+												<InputField name="ПоступлениеДСНазначениеПлатежа" id="39">
+													<DataPath>Объект.ПоступлениеДС.НазначениеПлатежа</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПоступлениеДСНазначениеПлатежаКонтекстноеМеню" id="40"/>
+													<ExtendedTooltip name="ПоступлениеДСНазначениеПлатежаРасширеннаяПодсказка" id="41"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСписаниеДС" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списание ДС</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСписаниеДСРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Table name="СписаниеДС" id="44">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СписаниеДС</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписаниеДСКонтекстноеМеню" id="45"/>
+							<AutoCommandBar name="СписаниеДСКоманднаяПанель" id="46"/>
+							<ExtendedTooltip name="СписаниеДСРасширеннаяПодсказка" id="47"/>
+							<SearchStringAddition name="СписаниеДССтрокаПоиска" id="48">
+								<AdditionSource>
+									<Item>СписаниеДС</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписаниеДССтрокаПоискаКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="СписаниеДССтрокаПоискаРасширеннаяПодсказка" id="50"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписаниеДССостояниеПросмотра" id="51">
+								<AdditionSource>
+									<Item>СписаниеДС</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписаниеДССостояниеПросмотраКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="СписаниеДССостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписаниеДСУправлениеПоиском" id="54">
+								<AdditionSource>
+									<Item>СписаниеДС</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписаниеДСУправлениеПоискомКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="СписаниеДСУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписаниеДСНомерСтроки" id="57">
+									<DataPath>Объект.СписаниеДС.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписаниеДСНомерСтрокиКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СписаниеДСНомерСтрокиРасширеннаяПодсказка" id="59"/>
+								</LabelField>
+								<ColumnGroup name="СписаниеДСГруппа1" id="80">
+									<ExtendedTooltip name="СписаниеДСГруппа1РасширеннаяПодсказка" id="81"/>
+									<ChildItems>
+										<ColumnGroup name="СписаниеДСГруппа2" id="82">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СписаниеДСГруппа2РасширеннаяПодсказка" id="83"/>
+											<ChildItems>
+												<InputField name="СписаниеДСКонтрагент" id="60">
+													<DataPath>Объект.СписаниеДС.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписаниеДСКонтрагентКонтекстноеМеню" id="61"/>
+													<ExtendedTooltip name="СписаниеДСКонтрагентРасширеннаяПодсказка" id="62"/>
+												</InputField>
+												<InputField name="СписаниеДСДоговор" id="63">
+													<DataPath>Объект.СписаниеДС.Договор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписаниеДСДоговорКонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="СписаниеДСДоговорРасширеннаяПодсказка" id="65"/>
+												</InputField>
+												<InputField name="СписаниеДССумма" id="66">
+													<DataPath>Объект.СписаниеДС.Сумма</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписаниеДССуммаКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="СписаниеДССуммаРасширеннаяПодсказка" id="68"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="СписаниеДСГруппа3" id="84">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СписаниеДСГруппа3РасширеннаяПодсказка" id="85"/>
+											<ChildItems>
+												<InputField name="СписаниеДСНазначениеПлатежа" id="69">
+													<DataPath>Объект.СписаниеДС.НазначениеПлатежа</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СписаниеДСНазначениеПлатежаКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="СписаниеДСНазначениеПлатежаРасширеннаяПодсказка" id="71"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВыпискаБанка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.Взаиморасчеты.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>AccountingRegister.Управленческий.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

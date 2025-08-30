@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="Печать" id="52">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Печать</CommandName>
+			<BackColor>#CCFFCC</BackColor>
+			<Font ref="style:NormalTextFont" faceName="Arial Black" height="14" kind="StyleItem" scale="100"/>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="53"/>
+		</Button>
+		<Pages name="РазделениеПоСтраницам" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделение по страницам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделение по страницам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="РазделениеПоСтраницамРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<Page name="ДанныеОрганизации" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные организации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные организации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДанныеОрганизацииРасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<UsualGroup name="ОбщаяИнформация" id="88">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая информация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая информация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ОбщаяИнформацияРасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<InputField name="ОргНаименованиеСокращеенное" id="4">
+									<DataPath>НаборКонстант.ОргНаименованиеСокращеенное</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данный реквизит используется во всей конфигурации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<BackColor>#FFFF99</BackColor>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите сокращенное наименование организации...</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОргНаименованиеСокращеенноеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ОргНаименованиеСокращеенноеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="ОргНаименование" id="1">
+									<DataPath>НаборКонстант.ОргНаименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Полное наименование</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данный реквизит используется во всей конфигурации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите полное наименование организации...</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОргНаименованиеКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ОргНаименованиеРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="ОргПочтовыйАдрес" id="7">
+									<DataPath>НаборКонстант.ОргПочтовыйАдрес</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Почтовый адрес</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите почтовый адрес организации...</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОргПочтовыйАдресКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ОргПочтовыйАдресРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ОргЮрАдрес" id="49">
+									<DataPath>НаборКонстант.ОргЮрАдрес</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Юридический адрес</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОргЮрАдресКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ОргЮрАдресРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="БанковскиеРеквизиты" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скрыть банковские реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Банковские реквизиты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показать банковские реквизиты</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<Representation>StrongSeparation</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="БанковскиеРеквизитыРасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<InputField name="Банк" id="75">
+									<DataPath>НаборКонстант.Банк</DataPath>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите основной банк организации...</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="БанкКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="БанкРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="OnChange">БанкПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОргКоррСчет" id="13">
+									<DataPath>НаборКонстант.ОргКоррСчет</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корр счет</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполняется автоматически при выборе банка!</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОргКоррСчетКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ОргКоррСчетРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="ОргРасчетныйСчет" id="10">
+									<DataPath>НаборКонстант.ОргРасчетныйСчет</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчетный счет</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите основной расчетный счет организации</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОргРасчетныйСчетКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ОргРасчетныйСчетРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДанныеРуководителя" id="92">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скрыть данные руководителя</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные руководителя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показать данные руководителя</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<Representation>NormalSeparation</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ДанныеРуководителяРасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРуководитель" id="94">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные руководителя</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#333333</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа руководитель</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+									<Representation>StrongSeparation</Representation>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="ГруппаРуководительРасширеннаяПодсказка" id="95"/>
+									<ChildItems>
+										<InputField name="ОргРуководительФИО" id="19">
+											<DataPath>НаборКонстант.ОргРуководительФИО</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОргРуководительФИОКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ОргРуководительФИОРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<InputField name="ОргРуководительДолжность" id="16">
+											<DataPath>НаборКонстант.ОргРуководительДолжность</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Должность</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОргРуководительДолжностьКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ОргРуководительДолжностьРасширеннаяПодсказка" id="18"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаБухгалтер" id="96">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа бухгалтер</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#333333</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа бухгалтер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+									<Representation>StrongSeparation</Representation>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="ГруппаБухгалтерРасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<InputField name="Бухгалтер" id="72">
+											<DataPath>НаборКонстант.Бухгалтер</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="БухгалтерКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="БухгалтерРасширеннаяПодсказка" id="74"/>
+										</InputField>
+										<InputField name="ДолжностьБухгалтера" id="69">
+											<DataPath>НаборКонстант.ДолжностьБухгалтера</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Должность</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДолжностьБухгалтераКонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="ДолжностьБухгалтераРасширеннаяПодсказка" id="71"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Коды" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КодыРасширеннаяПодсказка" id="83"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="98">
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<InputField name="ОргИНН" id="22">
+									<DataPath>НаборКонстант.ОргИНН</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ИНН/КПП</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ОргИННКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ОргИННРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<LabelDecoration name="Декорация1" id="100">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>/</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="102"/>
+								</LabelDecoration>
+								<InputField name="ОргКПП" id="25">
+									<DataPath>НаборКонстант.ОргКПП</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>/</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОргКППКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ОргКППРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОргОКПО" id="37">
+							<DataPath>НаборКонстант.ОргОКПО</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргОКПОКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ОргОКПОРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="ОргОКВЭД" id="34">
+							<DataPath>НаборКонстант.ОргОКВЭД</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргОКВЭДКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ОргОКВЭДРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ОргОКАТО" id="31">
+							<DataPath>НаборКонстант.ОргОКАТО</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргОКАТОКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ОргОКАТОРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="ОргОГРН" id="28">
+							<DataPath>НаборКонстант.ОргОГРН</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргОГРНКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ОргОГРНРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="КонтактнаяИнформация" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="85"/>
+					<ChildItems>
+						<InputField name="ОргТелефон" id="43">
+							<DataPath>НаборКонстант.ОргТелефон</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргТелефонКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ОргТелефонРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ОргЭлПочта" id="46">
+							<DataPath>НаборКонстант.ОргЭлПочта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргЭлПочтаКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ОргЭлПочтаРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="ОргВебСайт" id="40">
+							<DataPath>НаборКонстант.ОргВебСайт</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОргВебСайтКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ОргВебСайтРасширеннаяПодсказка" id="42"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Функционал" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функционал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функционал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ФункционалРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<UsualGroup name="Настройки" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<InputField name="ПрефиксНумерации" id="63">
+									<DataPath>НаборКонстант.ПрефиксНумерации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Префикс</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ПрефиксНумерацииКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПрефиксНумерацииРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="Наценка" id="66">
+									<DataPath>НаборКонстант.Наценка</DataPath>
+									<ContextMenu name="НаценкаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="НаценкаРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="Аванс" id="107">
+									<DataPath>НаборКонстант.Аванс</DataPath>
+									<ContextMenu name="АвансКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="АвансРасширеннаяПодсказка" id="109"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ФункциональныеОпции" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Функциональные опции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Функциональные опции</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>PopUp</Behavior>
+							<ExtendedTooltip name="ФункциональныеОпцииРасширеннаяПодсказка" id="106"/>
+							<ChildItems>
+								<CheckBoxField name="БухгалтерскийУчет" id="54">
+									<DataPath>НаборКонстант.БухгалтерскийУчет</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="БухгалтерскийУчетКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="БухгалтерскийУчетРасширеннаяПодсказка" id="56"/>
+								</CheckBoxField>
+								<CheckBoxField name="РасчетЗарплаты" id="57">
+									<DataPath>НаборКонстант.РасчетЗарплаты</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РасчетЗарплатыКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="РасчетЗарплатыРасширеннаяПодсказка" id="59"/>
+								</CheckBoxField>
+								<CheckBoxField name="УчетКлиентов" id="60">
+									<DataPath>НаборКонстант.УчетКлиентов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УчетКлиентовКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="УчетКлиентовРасширеннаяПодсказка" id="62"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>
